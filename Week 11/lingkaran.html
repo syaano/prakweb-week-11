@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Menghitung Lingkaran</title>
+</head>
+<body>
+
+	<button onclick="lingkaran()">Menghitung Keliling Lingkaran</button>
+	<input type="number" placeholder="Masukkan Nilai Jari-Jari Lingkaran (cm)" id="jari"> 
+	<br>
+	<br>
+		HASIL : <span id="hasil"></span>
+	<br>
+	<br>
+	<button onclick="lingkaran()">Menghitung Luas Lingkaran</button>
+	<input type="number" placeholder="Masukkan Nilai Jari-Jari Lingkaran (cm)" id="luas"> 
+	<br>
+	<br>
+		HASIL : <span id="hasilluas"></span>
+
+<script>
+    function lingkaran() {
+        document.getElementById('hasil').innerHTML=3.14*2*parseFloat(jari.value);
+
+        document.getElementById('hasilluas').innerHTML=3.14*parseFloat(Math.pow(luas.value, 2));
+    }
+    </script>
+
+</body>
+</html>

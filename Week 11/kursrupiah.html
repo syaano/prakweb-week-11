@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Kurs Rupiah</title>
+</head>
+<body>
+
+    <h2>Menghitung Kurs Rupiah US</h2>
+    <label for="">Masukan nominalnya:</label>
+    <input type="number" name="dolaramerika" id="dolaramerika" onchange="HitungDolarAmerika()">
+    <p>Nilai dari Rupiah ke dalam Dollar US:<span id="rupiah_1"></span></p>
+
+
+    <h2>Menghitung Kurs Rupiah Eropa</h2>
+    <label for="">Masukan nominalnya:</label>
+    <input type="number" name="dolareropa" id="dolareropa" onchange="HitungDolarEropa()">
+    <p>Nilai dari Rupiah ke dalam Dolar Eropa:<span id="rupiah_2"></span></p>
+
+
+    <h2>Menghitung Kurs Rupiah Singapura</h2>
+    <label for="">Masukan nominalnya :</label>
+    <input type="number" name="dolarsingapura" id="dolarsingapura" onchange="HitungDolarSingapura()">
+    <p>Nilai dari Rupiah ke dalam Dolar Singapura:<span id="rupiah_3"></span></p>
+
+
+    <script>
+        function HitungDolarAmerika() {
+            let jumlahdolarus = document.getElementById("dolaramerika").value;
+            let jumlahrupiah = 14650 * jumlahdolarus;
+            document.getElementById("rupiah_1").innerText=jumlahrupiah;  
+        }
+
+        function HitungDolarEropa() {
+            let jumlahdolarerp = document.getElementById("dolareropa").value;
+            let jumlahrupiah = 16984 * jumlahdolarerp;
+            document.getElementById("rupiah_2").innerText=jumlahrupiah;  
+        }
+
+        function HitungDolarSingapura() {
+            let jumlahdolarsgd = document.getElementById("dolarsingapura").value;
+            let jumlahrupiah = 11644 * jumlahdolarsgd;
+            document.getElementById("rupiah_3").innerText=jumlahrupiah;  
+        }
+    </script>
+
+</body>
+</html>
